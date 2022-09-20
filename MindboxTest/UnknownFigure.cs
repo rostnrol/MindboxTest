@@ -7,7 +7,7 @@ using MindboxTest.Base;
 
 namespace MindboxTest.Figures
 {
-    class UnknownFigure
+    public class UnknownFigure
     {
         private List<Apex> _dots;
         public readonly double Square;
