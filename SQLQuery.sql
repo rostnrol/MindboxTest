@@ -20,19 +20,19 @@ ADD ProductId smallint NOT NULL FOREIGN KEY REFERENCES Products(ProductId)
 
 INSERT INTO Products
 VALUES
-('Капуста', 1),
-('Вино', 2),
-('Морковь', 1),
-('Дезодорант', 3),
-('Швабра', NULL),
-('Кроссовки', NULL),
-('Одеколон', 3),
-('Томаты', 1);
+('РљР°РїСѓСЃС‚Р°', 1),
+('Р’РёРЅРѕ', 2),
+('РњРѕСЂРєРѕРІСЊ', 1),
+('Р”РµР·РѕРґРѕСЂР°РЅС‚', 3),
+('РЁРІР°Р±СЂР°', NULL),
+('РљСЂРѕСЃСЃРѕРІРєРё', NULL),
+('РћРґРµРєРѕР»РѕРЅ', 3),
+('РўРѕРјР°С‚С‹', 1);
 
 INSERT INTO Categories
 (CategoryName)
 VALUES 
-('Овощи', 1, 3), ('Бакалея', 2, NULL), ('Косметика', 4, 7);
+('РћРІРѕС‰Рё', 1, 3), ('Р‘Р°РєР°Р»РµСЏ', 2, NULL), ('РљРѕСЃРјРµС‚РёРєР°', 4, 7);
 
 SELECT * FROM Categories
 SELECt * FROM Products
