@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MindboxTest.Base;
+using FigureLibrary.Base;
 
-namespace MindboxTest.Figures
+namespace FigureLibrary.Figures
 {
     public class Circle
     {

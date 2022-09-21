@@ -1,7 +1,7 @@
-﻿using MindboxTest.Base;
+﻿using FigureLibrary.Base;
 using NUnit.Framework;
 
-namespace MindBoxTest.UnitTest
+namespace UnitTest
 {
 	[TestFixture]
 	public class SideTest

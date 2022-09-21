@@ -7,8 +7,8 @@
     <ProjectGuid>{3280499A-C1FD-4A89-820A-83AA96DBC3C3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MindboxTest</RootNamespace>
-    <AssemblyName>MindboxTest</AssemblyName>
+    <RootNamespace>FiguresLibrary</RootNamespace>
+    <AssemblyName>FiguresLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

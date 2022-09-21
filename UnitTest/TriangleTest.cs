@@ -1,9 +1,9 @@
 using System;
 using NUnit.Framework;
-using MindboxTest.Base;
-using MindboxTest.Figures;
+using FigureLibrary.Base;
+using FigureLibrary.Figures;
 
-namespace MindboxTest.UnitTest
+namespace UnitTest
 {
     [TestFixture]
     public class TriangleTest
