@@ -12,10 +12,10 @@ namespace UnitTest
         public void IsAreaCountCorrect()
         {
             UnknownFigure polygon = new UnknownFigure(
-                new Apex(10, 10),
-                new Apex(60, 10),
-                new Apex(100, 60),
-                new Apex(100, 10));
+                new Vector2D(10, 10),
+                new Vector2D(60, 10),
+                new Vector2D(100, 60),
+                new Vector2D(100, 10));
 
             Assert.AreEqual(1000, polygon.Square);
         }

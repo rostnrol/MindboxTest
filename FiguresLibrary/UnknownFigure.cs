@@ -9,10 +9,10 @@ namespace FigureLibrary.Figures
 {
     public class UnknownFigure
     {
-        private List<Apex> _dots;
+        private List<Vector2D> _dots;
         public readonly double Square;
 
-        public UnknownFigure(params Apex[] dots)
+        public UnknownFigure(params Vector2D[] dots)
         {
             _dots = dots.ToList();
             Square = CalculateArea();

@@ -8,14 +8,14 @@ namespace FigureLibrary.Base
 {
     public class Side
     {
-        public readonly Apex Start;
-        public readonly Apex End;
+        public readonly Vector2D Start;
+        public readonly Vector2D End;
         public readonly double Lenght;
 
-        public Side(double apexStarX, double apexStartY, double apexEndX, double apexEndY)
+        public Side(double vector2dStarX, double vector2dStartY, double vector2dEndX, double vector2dEndY)
         {
-            Start = new Apex(apexStarX, apexStartY);
-            End = new Apex(apexEndX, apexEndY);
+            Start = new Vector2D(vector2dStarX, vector2dStartY);
+            End = new Vector2D(vector2dEndX, vector2dEndY);
 
             if(ValidateSide())
             Lenght = CalculateLength();

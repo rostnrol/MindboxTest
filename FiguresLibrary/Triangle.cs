@@ -10,32 +10,26 @@ namespace FigureLibrary.Figures
 
     public class Triangle
     {
+        public readonly Vector2D VectorOne;
+        public readonly Vector2D VectorTwo;
+        public readonly Vector2D VectorThree;
+
         public readonly Side SideOne;
         public readonly Side SideTwo;
         public readonly Side SideThree;
         public readonly double Square;
 
-        public Triangle(Side sideOne, Side sideTwo)
+        public Triangle(Vector2D vectorOne, Vector2D vectorTwo, Vector2D vectorThree)
         {
-            SideOne = sideOne;
+            VectorOne = vectorOne;
+            VectorTwo = vectorTwo;
+            VectorThree = vectorThree;
 
-            if (ValidateSideTwo(sideOne, sideTwo))
-                SideTwo = sideTwo;
+            SideOne = new Side(vectorOne.XCoordinate, vectorOne.YCoordinate, vectorTwo.XCoordinate, vectorTwo.YCoordinate);
+            SideTwo = new Side(vectorTwo.XCoordinate, vectorTwo.YCoordinate, vectorThree.XCoordinate, vectorThree.YCoordinate);
+            SideThree = new Side(vectorThree.XCoordinate, vectorThree.YCoordinate, vectorOne.XCoordinate, vectorOne.YCoordinate);
 
-            SideThree = new Side(sideTwo.End.XCoordinate, sideTwo.End.YCoordinate, sideOne.Start.XCoordinate, sideOne.Start.YCoordinate);
-
-            if (CalculateArea() >= 0)
-                Square = CalculateArea();
-            else
-                throw new ArgumentException("Площадь не может быть меньше или равной 0");
-        }
-
-        public bool ValidateSideTwo(Side sideA, Side sideB)
-        {
-            if (sideA.End.XCoordinate == sideB.Start.XCoordinate && sideA.End.YCoordinate == sideB.Start.YCoordinate)
-                return true;
-            else
-                throw new ArgumentException("Треугольник должен быть замкнутым");
+            Square = CalculateArea();
         }
 
         public double CalculateArea()

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace FigureLibrary.Base
 {
-    public class Apex
+    public class Vector2D
     {
         public readonly double XCoordinate;
         public readonly double YCoordinate;
 
-        public Apex(double xCoordinate, double yCoordinate)
+        public Vector2D(double xCoordinate, double yCoordinate)
         {
             XCoordinate = xCoordinate;
             YCoordinate = yCoordinate;
